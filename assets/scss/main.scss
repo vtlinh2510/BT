@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+
+    .nav-list{
+        display: flex;
+
+        .nav-link{
+            font-style: 15px;
+            padding: 12px 16px;
+            line-height: 40px ;
+            color: #fff;
+        }
+    }
+
+    .search-btn{
+        background-color: #000;
+        padding: 0 16px;
+        color: #fff;
+        border: none;  
+        
+    }
+    
+    .search-btn:hover, .nav:hover>.nav-link {
+        background-color: #ccc;
+        color: #000;
+        cursor: pointer;
+    }
+}
+
+.header{
+    margin: 48px auto;
+    .header-title{
+        font-size: 48px;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    .header-sub-title{
+        text-align: center;
+        font-size: 15px;
+
+        span{
+            color: #fff;
+            background-color: #000;
+            padding: 3px 8px;
+        }
+    }
+}
+
+.banner{
+
+    position: relative;
+
+    &-image{
+        width: 100vw;  
+
+        .image{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-content{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: white;
+
+        
+    }
+
+    &-sub-title{
+        font-size: 36px;
+    }
+
+    &-title{
+        font-size: 64px;
+        margin: 20px 0;
+    }
+
+    &-sub-title, &-title{
+        letter-spacing: 4px;
+    }
+
+    &-button{
+        padding: 10px;
+        background-color: #ccc;
+        opacity: 0.6;
+        border: none;
+
+        &:hover{
+            opacity: 1;
+        }
+
+        a{
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000;      
+        }
+    }
+}
+
+.main{
+    display: flex;
+    gap: 35px;
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+
+    .blog-list{
+        background-color: #fff;
+        flex:5;
+
+        .blog{
+            padding: 20px;
+        }
+
+    }
+
+    .blog-menu{
+        flex:4;
+    }
+}
